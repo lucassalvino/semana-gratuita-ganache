@@ -1,0 +1,23 @@
+#banner-topo{
+    width: 100vw;
+    height: 400px;
+    background-image: url('../imagens/banner-topo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px){
+    #banner-topo{
+        background-position: top;
+        height: 200px;
+    }
+}
+
+@media (max-width: 425px){
+    #banner-topo{
+        background-size: contain;
+        background-image: url('../imagens/banner-topo-mobile.png');
+    }
+}
