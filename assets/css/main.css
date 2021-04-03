@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 #banner-topo{
     width: 100vw;
     height: 400px;
@@ -6,18 +9,628 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+#semana-ganache{
+    width: 100vw;
+    padding-top: 10px;
+    background-color: #7F22E7;
+}
+#form-quero-participar{
+    padding-bottom: 40px;
 
+}
+.container-input{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+label{
+    margin-bottom: 1px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.titulo1{
+    color: #FF6700;
+    font-size: 2.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+}
+input{
+    border: none;
+    outline: none!important;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(148, 156, 172, 0.18);
+    height: 66px;
+}
+.titulo2{
+    color: #FF6700;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+button:hover{
+    cursor: pointer;
+}
+#button-enviar, .button-default{
+    margin-top: 50px;
+    outline: none!important;
+    width: 666px;
+    border: none;
+    height: 86px;
+    border-radius: 43px;
+    background: #ff6700;
+    box-shadow: 0.42px 1.96px 27px rgba(204, 204, 223, 0.4);
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+#button-quero-inscrever-rodape{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#button-quero-inscrever, #button-quero-inscrever-rodape{
+    font-size: 25px;
+}
 
+.titulo1.mobile{
+    display: none;
+}
+.container-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo{
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+.linhas-enfeites-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    max-width: 1200px;
+}
+.redux-enfeite{
+    width: 65vw;
+}
+.linhas-enfeites-1 div{
+    height: 3px;
+}
+.linhas-enfeites-1 .linha1{
+    background-color: #FC8700;
+    width: 18%;
+}
+.linhas-enfeites-1 .linha2{
+    width: 81%;
+    background-color: #D0B3D7;
+}
+.texto-branco{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.texto-preto{
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.margin-padrao{
+    margin-top: 15px;
+}
+#programacao{
+    margin-top: 10px;
+}
+
+.conteudo-texto{
+    max-width: 1300px;
+}
+.container-form1{
+    width: 46vw;
+    max-width: 900px;
+}
+.container1-form1{
+    width: 50%;
+}
+.container2-form1{
+    width: 43%;
+}
+.iframe-video{
+}
+.fundo-amarelo{
+    background-color: #FFEC6E;
+    z-index: -1;
+    height: 410px;
+    width: 100vw;
+    position: absolute;
+    margin-top: 350px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.iframe-video iframe{
+    height: auto;
+    min-height: 560px;
+    width: 65vw;
+    max-width: 900px;
+}
+#cronograma{
+    margin-top:65px
+}
+.titulo1-2linhas{
+    font-size: 2.5rem;
+}
+.descricao-semana-cronograma{
+    text-align: left;
+    color: #4D4D4D;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-semana-descricao{
+    max-width: 800px;
+}
+.serao-4encontros, .materiais-pdf{
+    width: 18vw;
+    height: auto;
+    max-width: 350px;
+    margin-right: 6.5vw;
+}
+.materiais-pdf{
+    max-width: 300px;
+}
+.margin-cronograma{
+    margin-top: 50px;
+}
+.momentos-conteudo{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+.conteudo-sobre-laranja{
+    z-index: 2;
+    height: 300px;
+    margin-top: 108px;
+}
+.espacador-cinza{
+    background-color: #81CCDB;
+    height: 4px;
+    width: 72vw;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.item-laranja{
+    background-color: #FF6700;
+    width: 58vw;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    margin-top: 45px;
+    z-index: 1;
+}
+.img-destaque1{
+    width: 100%;
+}
+.img-destaque2{
+    height: auto;
+    width: 54%;
+}
+.img-destaque3{
+    height: auto;
+    width: 44%;
+}
+.texto-quem-sou{
+    font-style: italic;
+    text-align: justify;
+    font-weight: 300;
+    color: #46485F;
+    font-family: 'Open Sans', sans-serif;
+}
+.fotografia-marilia{
+    width: 34.6vw;
+    height: auto;
+    max-width: 370px;
+}
+.container-texto-quem-sou{
+    margin-top: 50px;
+    max-width: 600px;
+}
+.enfeite-quem-he{
+    max-width: 800px;
+}
+.container-contato-marilia{
+    margin-top: 65px;
+}
+.container-social{
+    margin: 35px 8px;
+}
+.amarela-quem-sou{
+    position: absolute;
+    right: 0;
+    width: 34vw;
+    height: 840px;
+    background-color: #FFEC6E;
+    z-index: 1;
+}
+.azul-social{
+    position: absolute;
+    right: 0;
+    width: 41vw;
+    height: 100px;
+    background-color: #81CCDB;
+    z-index: 2;
+    margin-top: 48.2vh;
+    border-radius: 50px 0px 0px 50px;
+}
+.enfeite-quem-sou{
+    margin-top: 40px;
+    width: 7.13vw;
+    height: auto;
+}
+.container-social-contato{
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    margin-right: 25vw;
+}
+#rodape{
+    margin-top: 62px;
+    background-color: #81CCDB;
+}
+#fim{
+    background-color: #4E5CAA;
+}
+.fim-xau{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin: 30px;
+}
+#quememarilia .container-conteudo{
+    justify-content: flex-start;
+}
+.corresponde-amarelo{
+    margin-left: 25vw;
+}
+@media (max-width:2100px ) {
+    .corresponde-amarelo{
+        margin-left: 20vw;
+    }
+    .container-social-contato{
+        margin-right: 20vw;
+    }
+    .amarela-quem-sou{
+        width: 30vw;
+    }
+}
+@media (max-width:1440px ) {
+    .container-form1{
+        width: 60vw;
+    }
+}
+@media (max-width:1740px ) {
+    .corresponde-amarelo{
+        margin-left: 15vw;
+    }
+    .container-social-contato{
+        margin-right: 15vw;
+    }
+    .amarela-quem-sou{
+        width: 25vw;
+    }
+    .azul-social{
+        width: 38vw;
+    }
+}
+@media (max-width:1500px ) {
+    .corresponde-amarelo{
+        margin-left: 8vw;
+    }
+    .container-social-contato{
+        margin-right: 14vw;
+    }
+    .amarela-quem-sou{
+        width: 27vw;
+    }
+    .azul-social{
+        width: 38vw;
+    }
+}
+@media (max-width:1350px ) {
+    .corresponde-amarelo{
+        margin-left: 1vw;
+    }
+    .container-social-contato{
+        margin-right: 14vw;
+    }
+    .amarela-quem-sou{
+        width: 27vw;
+    }
+    .azul-social{
+        width: 40vw;
+    }
+}
+@media (max-width:1225px ) {
+    .corresponde-amarelo{
+        margin-left: 0vw;
+    }
+    .container-social-contato{
+        margin-right: 10vw;
+    }
+    .amarela-quem-sou{
+        width: 27vw;
+    }
+    .azul-social{
+        width: 38vw;
+    }
+}
+@media (max-width:1200px ) {
+    .container-form1 {
+        width: 80vw;
+    }
+    .iframe-video iframe{
+        min-height: 560px;
+        width: 55vw;
+    }
+    .iframe-video iframe {
+        width: 70vw;
+    }
+}
+@media (max-width:1150px ) {
+    .corresponde-amarelo{
+        max-width: 500px;
+    }
+    .enfeite-quem-he {
+        max-width: 550px;
+    }
+    .container-social-contato{
+        margin-right: 8vw;
+    }
+    .amarela-quem-sou{
+        width: 25vw;
+    }
+    .azul-social{
+        width: 38vw;
+    }
+}
+@media (max-width: 1040px){
+    .container-contato-marilia {
+        margin-top: 77px;
+    }
+    .azul-social{
+        width: 40vw;
+    }
+}
+@media (max-width: 1024px){
+    .container-form1 {
+        width: 80vw;
+    }
+    .iframe-video iframe{
+        min-height: 560px;
+        width: 55vw;
+    }
+    .iframe-video iframe {
+        width: 70vw;
+    }
+}
+@media (max-width: 1040px){
+    .container-contato-marilia {
+        margin-top: 90px;
+    }
+    .azul-social{
+        width: 40vw;
+    }
+}
+@media (max-width: 1000px){
+    .container-social-contato{
+        position: static;
+    }
+    #container-quemsou{
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .container-social-contato {
+        margin-right: 0px;
+    }
+    .container-contato-marilia{
+        margin-top: 20px;
+    }
+    .amarela-quem-sou{
+        width: 100vw;
+        height: 337px;
+        margin-top: 750px;
+    }
+    .azul-social{
+        width: 86vw;
+        margin-top: 172px;
+    }
+    .enfeite-quem-sou{
+        position: absolute;
+        left: 0;
+        margin-top: -277px;
+    }
+    .corresponde-amarelo {
+        max-width: 100vw;
+    }
+    #quememarilia .conteudo{
+        padding:0px!important;
+    }
+    
+}
 @media (max-width: 768px){
+    .item-laranja{
+        width: 100vw;
+    }
+    .mobile-column768{
+        flex-direction: column;
+    }
+    .serao-4encontros, .materiais-pdf{
+        margin-bottom: 20px;
+        width: 27vw;
+        margin-right:0px;
+    }
+    .descricao-semana-cronograma{
+        text-align: center;
+    }
     #banner-topo{
         background-position: top;
         height: 200px;
     }
+    .titulo1{
+        font-size: 2rem;
+    }
+    .titulo2{
+        font-size: 1.2rem;
+    }
+    #form-quero-participar {
+        padding-bottom: 30px;
+    }
+    .titulo1.descktop{
+        display: none;
+    }
+    .titulo1.mobile{
+        display: flex;
+    }
+    .linhas-enfeites-1 div{
+        height: 4px;
+    }
+    .linhas-enfeites-1 .linha2{
+        width: 78%;
+    }
+    #button-enviar, .button-default{
+        margin-top: 40px;
+        width: 500px;
+        height: 75px;
+        font-size: 25px;
+    }
+    .container-social {
+        margin: 30px 8px;
+    }
+    .azul-social {
+        margin-top: 137px;
+    }
+    #rodape {
+        margin-top: 105px;
+    }
 }
-
+@media (max-width: 610px){
+    .container-texto-quem-sou{
+        max-width: 80vw;
+    }
+    .azul-social {
+        margin-top: 148px;
+    }
+    #rodape {
+        margin-top: 85px;
+    }
+    .amarela-quem-sou {
+        width: 100vw;
+        height: 337px;
+        margin-top: 790px;
+    }
+}
 @media (max-width: 425px){
+    .conteudo {
+        padding: 0px 20px;
+    }
+    .conteudo-fotografia{
+        padding:0px;
+    }
+    .img-destaque1 {
+        width: 100vw;
+    }
+    #button-quero-inscrever, #button-quero-inscrever-rodape {
+        font-size: 18px;
+    }
+    .titulo1{
+        font-size: 1.8rem;
+    }
+    .mobile-column{
+        flex-direction: column;
+    }
+    .container1-form1{
+        width: 100%;
+    }
+    .container2-form1{
+        width: 100%;
+    }
+    input{
+        height: 50px;
+    }
+    .serao-4encontros, .materiais-pdf{
+        width: 35vw;
+    }
+    #button-quero-inscrever, #button-quero-inscrever-rodape {
+        margin-top: 5px;
+        width: 95%;
+        height: 60px;
+        font-size: 15px;
+        padding: 5px 35px;
+    }
+    #rodape{
+        padding-top: 25px;
+    }
+    .fundo-amarelo {
+        margin-top: 275px;
+    }
+    #button-enviar, .button-default {
+        height: 52px;
+        font-size: 18px;
+    }
+    .iframe-video iframe {
+        width: 88vw;
+    }
     #banner-topo{
         background-size: contain;
         background-image: url('../imagens/banner-topo-mobile.png');
+    }
+    .titulo1-2linhas{
+        font-size: 1.2rem;
+    }
+    .amarela-quem-sou {
+        height: 350px;
+        margin-top: 950px;
+    }
+    .azul-social {
+        margin-top: 190px;
+    }
+    .fotografia-marilia {
+        width: 68vw;
+        height: auto;
+        max-width: 370px;
+    }
+    .enfeite-quem-sou {
+        display: none!important;
+    }
+}
+@media (max-width: 375px){
+    .azul-social {
+        margin-top: 148px;
+    }
+    #rodape {
+        margin-top: 75px;
     }
 }
