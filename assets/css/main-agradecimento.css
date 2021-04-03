@@ -208,6 +208,9 @@ body{
 .container-social{
     margin: 0px 8px;
 }
+button:hover{
+    cursor: pointer;
+}
 @media (max-width:1440px){
     .container-fotografia-marilia {
         margin-left: 5vw;
@@ -326,6 +329,7 @@ body{
         margin-top: 16px;
     }
 }
+
 @media (max-width: 425px){
     .container-fotografia-marilia img{
         height: 80vw;
