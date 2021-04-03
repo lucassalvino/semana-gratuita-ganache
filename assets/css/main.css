@@ -154,8 +154,6 @@ button:hover{
 .container2-form1{
     width: 43%;
 }
-.iframe-video{
-}
 .fundo-amarelo{
     background-color: #FFEC6E;
     z-index: -1;
@@ -601,7 +599,7 @@ button:hover{
         font-size: 18px;
     }
     .iframe-video iframe {
-        width: 88vw;
+        width: 90vw;
     }
     #banner-topo{
         background-size: contain;
