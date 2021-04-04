@@ -7,7 +7,7 @@
     <title>Semana Gratuita – Ganache sem Neura</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css?v=1.6">
+    <link rel="stylesheet" href="assets/css/main.css?v=2.1">
     <link rel="icon" type="image/svg" href="assets/imagens/flavicon.svg" />
     <!-- Google Tag Manager -->
     <script>
@@ -86,7 +86,9 @@
                                 </button>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <span id="sucessocadastro" style="display: none;" class="mt-4 text-success">Recebemos seus dados!! Obrigado.</span>
+                                <span id="sucessocadastro" style="display: none;" class="mt-4 text-success">
+                                    <div class="lds-dual-ring"></div>
+                                </span>
                             </div>
                         </form>
                     </div>
@@ -326,20 +328,22 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
     <script>
         function autoScrollTo(el, tempo = 1000) {
-            var top = $("#" + el).offset().top;
-            $("html, body").animate({ scrollTop: top }, 1000);
+            document.getElementById(el).scrollIntoView();
+            //var top = $("#" + el).offset().top;
+            //$("html, body").animate({ scrollTop: top }, tempo);
         }
         $(document).ready(function(){
             $("#telefone").mask('(00) 0000-00009');
             $("#button-quero-inscrever").on('click', function(){
-                autoScrollTo('banner-topo', 500);
+                autoScrollTo('banner', 500);
             });
             $("#button-quero-inscrever-rodape").on('click', function(){
-                autoScrollTo('banner-topo');
+                autoScrollTo('banner');
             });
             $("#form-quero-participar").submit(function( event ){
                 event.preventDefault();
                 $('#sucessocadastro').show('slow');
+                $("#button-enviar").hide();
                 $.ajax({  
                     type: 'POST',
                     url: "http://134.122.127.179/ajuda-salateste/public/api/cadastra",
@@ -362,6 +366,8 @@
                     success: function(response) { 
                         console.log(response);
                     }
+                }).then((response) => {
+                    window.location.href = "http://ganachesemneura.com.br/obrigado-inscricao";
                 });
             });
 
