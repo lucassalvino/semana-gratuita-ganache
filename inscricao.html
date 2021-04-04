@@ -7,7 +7,7 @@
     <title>Semana Gratuita – Ganache sem Neura</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.2">
     <link rel="icon" type="image/svg" href="assets/imagens/flavicon.svg" />
     <!-- Google Tag Manager -->
     <script>
@@ -18,6 +18,12 @@
         })(window,document,'script','dataLayer','GTM-WW5T386');
     </script>
     <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+        vgo('setAccount', '475843387');
+        vgo('setTrackByDefault', true);
+        vgo('process');
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -45,11 +51,13 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column conteudo-texto margin-padrao">
-                    <p class="texto-branco">
-                        Se você quer se destacar na confeitaria, vendendo bolos estruturados e deliciosos decorados <br>
-                        com brigadeiro e ganache, mesmo que você nunca tenha feito nenhum <br>
-                        bolo na sua vida inteirinha, vou te dizer: aqui é o seu lugar!
-                    </p>
+                    <div id="container-texto-branco">
+                        <p class="texto-branco">
+                            Se você quer se destacar na confeitaria, vendendo bolos estruturados e deliciosos decorados
+                            com brigadeiro e ganache, mesmo que você nunca tenha feito nenhum 
+                            bolo na sua vida inteirinha, vou te dizer: aqui é o seu lugar!
+                        </p>
+                    </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <h3 class="titulo2">Inscreva-se para o nosso evento 100% online e gratuito “Ganache Sem Neura”</h3>
@@ -57,7 +65,7 @@
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <div class="container-form1">
                         <form action="#" id="form-quero-participar">
-                            <div class="d-flex container-input w-100">
+                            <div class="d-flex container-input sem-margin w-100">
                                 <label for="nome">Nome completo*</label>
                                 <input class="w-100" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
                             </div>
@@ -72,9 +80,12 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <button id="button-enviar">
+                                <button id="button-enviar" class="button-default">
                                     Quero garantir o meu lugar
                                 </button>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span id="sucessocadastro" style="display: none;" class="mt-4 text-success">Recebemos seus dados!! Obrigado.</span>
                             </div>
                         </form>
                     </div>
@@ -96,9 +107,9 @@
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-center flex-column conteudo-texto margin-padrao">
-                    <p class="texto-preto">
-                        Quer saber tudinho o que você vai aprender na semana gratuita “Ganache Sem Neura”?<br>
-                        Dá um Play no vídeo abaixo que vou te contar tudo o que você precisa saber para<br>
+                    <p class="texto-preto texto-programacao">
+                        Quer saber tudinho o que você vai aprender na semana gratuita “Ganache Sem Neura”?
+                        Dá um Play no vídeo abaixo que vou te contar tudo o que você precisa saber para
                         se programar para esse evento 100% online e gratuito.
                     </p>
                 </div>
@@ -110,7 +121,7 @@
                     </div>
                     <div class="d-flex align-items-center justify-content-center">
                         <button id="button-quero-inscrever" class="button-default">
-                            Quero me inscrever na semana <br>
+                            Quero me inscrever na semana<br>
                             gratuita Ganache sem Neura
                         </button>
                     </div>
@@ -290,8 +301,48 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
     <script>
+        function autoScrollTo(el) {
+            var top = $("#" + el).offset().top;
+            $("html, body").animate({ scrollTop: top }, 1000);
+        }
         $(document).ready(function(){
+            $("#telefone").mask('(00) 0000-00009');
+            $("#button-quero-inscrever").on('click', function(){
+                autoScrollTo('banner-topo');
+            });
+            $("#button-quero-inscrever-rodape").on('click', function(){
+                autoScrollTo('banner-topo');
+            });
+            $("#form-quero-participar").submit(function( event ){
+                event.preventDefault();
+                $('#sucessocadastro').show('slow');
+                $.ajax({  
+                    type: 'POST',
+                    url: "http://134.122.127.179/ajuda-salateste/public/api/cadastra",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    crossDomain: true,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': '*/*',
+                        'Api-Token':'00e491a2ab0c3b6a0a7bacb482fe69c2057fb2032d944fd8e650058172f00c8e85f5a4f8'
+                    },
+                    data: JSON.stringify({
+                        contact:{
+                            email: $("#email").val(),
+                            firstName: $("#nome").val(),
+                            lastName: "",
+                            phone: $("#telefone").val()
+                        }
+                    }),
+                    success: function(response) { 
+                        console.log(response);
+                    }
+                });
+            });
+
             if($(document).width() > 1100){
                 var altura = $('.amarela-quem-sou').height();
                 $('.corresponde-amarelo').height(altura);

@@ -3,11 +3,14 @@ body{
 }
 #banner-topo{
     width: 100vw;
-    height: 400px;
+    height: 300px;
     background-image: url('../imagens/banner-topo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.texto-programacao{
+    max-width: 770px;
 }
 #semana-ganache{
     width: 100vw;
@@ -73,6 +76,10 @@ button:hover{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    transition-duration: .5s;
+}
+.button-default:hover{
+    transform: scale(1.1);
 }
 #button-quero-inscrever-rodape{
     margin-top: 25px;
@@ -502,6 +509,7 @@ button:hover{
     }
     .titulo2{
         font-size: 1.2rem;
+        line-height: 20px;
     }
     #form-quero-participar {
         padding-bottom: 30px;
@@ -551,6 +559,9 @@ button:hover{
     }
 }
 @media (max-width: 425px){
+    #container-texto-branco .texto-branco{
+        line-height: 20px;
+    }
     .conteudo {
         padding: 0px 20px;
     }
@@ -560,11 +571,9 @@ button:hover{
     .img-destaque1 {
         width: 100vw;
     }
-    #button-quero-inscrever, #button-quero-inscrever-rodape {
-        font-size: 18px;
-    }
     .titulo1{
         font-size: 1.8rem;
+        line-height: 28px;
     }
     .mobile-column{
         flex-direction: column;
@@ -583,10 +592,14 @@ button:hover{
     }
     #button-quero-inscrever, #button-quero-inscrever-rodape {
         margin-top: 5px;
-        width: 95%;
+        width: 100%;
         height: 60px;
         font-size: 15px;
         padding: 5px 35px;
+        max-width: 90vw;
+    }
+    #button-quero-inscrever{
+        margin-top: 21px;
     }
     #rodape{
         padding-top: 25px;
@@ -602,7 +615,7 @@ button:hover{
         width: 90vw;
     }
     #banner-topo{
-        background-size: contain;
+        background-size: cover;
         background-image: url('../imagens/banner-topo-mobile.png');
     }
     .titulo1-2linhas{
