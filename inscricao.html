@@ -7,7 +7,7 @@
     <title>Semana Gratuita – Ganache sem Neura</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css?v=1.3">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.6">
     <link rel="icon" type="image/svg" href="assets/imagens/flavicon.svg" />
     <!-- Google Tag Manager -->
     <script>
@@ -252,31 +252,52 @@
                         <div class="d-flex justify-content-center align-items-center container-contato-marilia">
                             <img class="fotografia-marilia" src="assets/imagens/quemhemarilia.png" alt="Foto Marilia calacio">
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="d-flex container-social">
-                                <a href="https://www.facebook.com/mariliacalaciobolos" target="_blank">
-                                    <img src="assets/imagens/facebook.png" alt="facebook">
-                                </a>
-                            </div>
-                            <div class="d-flex container-social">
-                                <a href="https://www.instagram.com/mariliacalacio" target="_blank">
-                                    <img src="assets/imagens/instagram.png" alt="instagram">
-                                </a>
-                            </div>
-                            <div class="d-flex container-social">
-                                <a href="https://www.youtube.com/mariliacalacio" target="_blank">
-                                    <img src="assets/imagens/youtube.png" alt="youtube">
-                                </a>
+                    </div>
+                    <div class="amarela-quem-sou">
+                        <div class="azul-social">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex container-social">
+                                    <a href="https://www.facebook.com/mariliacalaciobolos" target="_blank">
+                                        <img src="assets/imagens/facebook.png" alt="facebook">
+                                    </a>
+                                </div>
+                                <div class="d-flex container-social">
+                                    <a href="https://www.instagram.com/mariliacalacio" target="_blank">
+                                        <img src="assets/imagens/instagram.png" alt="instagram">
+                                    </a>
+                                </div>
+                                <div class="d-flex container-social">
+                                    <a href="https://www.youtube.com/mariliacalacio" target="_blank">
+                                        <img src="assets/imagens/youtube.png" alt="youtube">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="d-flex">
                             <img src="assets/imagens/enfeite1.png" alt="enfeite" class="enfeite-quem-sou">
                         </div>
                     </div>
-                    <div class="amarela-quem-sou">
-                        <div class="azul-social">
-                            
+                    <div class="amarela-quem-sou-mobile" style="display: none;">
+                        <div class="azul-social-mobile">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="d-flex container-social">
+                                    <a href="https://www.facebook.com/mariliacalaciobolos" target="_blank">
+                                        <img src="assets/imagens/facebook.png" alt="facebook">
+                                    </a>
+                                </div>
+                                <div class="d-flex container-social">
+                                    <a href="https://www.instagram.com/mariliacalacio" target="_blank">
+                                        <img src="assets/imagens/instagram.png" alt="instagram">
+                                    </a>
+                                </div>
+                                <div class="d-flex container-social">
+                                    <a href="https://www.youtube.com/mariliacalacio" target="_blank">
+                                        <img src="assets/imagens/youtube.png" alt="youtube">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="amarelo-mobile-agora"></div>
                     </div>
                 </div>
             </div>
@@ -304,14 +325,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js"></script>
     <script>
-        function autoScrollTo(el) {
+        function autoScrollTo(el, tempo = 1000) {
             var top = $("#" + el).offset().top;
             $("html, body").animate({ scrollTop: top }, 1000);
         }
         $(document).ready(function(){
             $("#telefone").mask('(00) 0000-00009');
             $("#button-quero-inscrever").on('click', function(){
-                autoScrollTo('banner-topo');
+                autoScrollTo('banner-topo', 500);
             });
             $("#button-quero-inscrever-rodape").on('click', function(){
                 autoScrollTo('banner-topo');

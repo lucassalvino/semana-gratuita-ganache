@@ -268,7 +268,7 @@ button:hover{
     margin-top: 65px;
 }
 .container-social{
-    margin: 35px 8px;
+    margin: 0px 8px;
 }
 .amarela-quem-sou{
     position: absolute;
@@ -287,11 +287,15 @@ button:hover{
     z-index: 2;
     margin-top: 48.2vh;
     border-radius: 50px 0px 0px 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
 }
 .enfeite-quem-sou{
-    margin-top: 40px;
     width: 7.13vw;
     height: auto;
+    margin-top: 500px;
+    margin-left: 5vw;
 }
 .container-social-contato{
     z-index: 5;
@@ -378,6 +382,13 @@ button:hover{
     .azul-social{
         width: 40vw;
     }
+    .container-social img{
+        height: auto;
+        width: 60px;
+    }
+    .azul-social{
+        padding-left: 52px;
+    }
 }
 @media (max-width:1225px ) {
     .corresponde-amarelo{
@@ -429,8 +440,24 @@ button:hover{
     .azul-social{
         width: 40vw;
     }
+    .container-contato-marilia {
+        margin-top: 90px;
+    }
+    .azul-social{
+        width: 40vw;
+    }
 }
 @media (max-width: 1024px){
+    .amarela-quem-sou{
+        height: 677px;
+    }
+    .azul-social{
+        margin-top: 493px;
+    }
+    .enfeite-quem-sou {
+        margin-top: 566px;
+        margin-left: 116px;
+    }
     .container-form1 {
         width: 80vw;
     }
@@ -440,14 +467,6 @@ button:hover{
     }
     .iframe-video iframe {
         width: 70vw;
-    }
-}
-@media (max-width: 1040px){
-    .container-contato-marilia {
-        margin-top: 90px;
-    }
-    .azul-social{
-        width: 40vw;
     }
 }
 @media (max-width: 1000px){
@@ -467,18 +486,14 @@ button:hover{
         margin-top: 20px;
     }
     .amarela-quem-sou{
-        width: 100vw;
-        height: 337px;
-        margin-top: 750px;
+        display: none;
     }
     .azul-social{
         width: 86vw;
         margin-top: 172px;
     }
     .enfeite-quem-sou{
-        position: absolute;
-        left: 0;
-        margin-top: -277px;
+        display: none;
     }
     .corresponde-amarelo {
         max-width: 100vw;
@@ -486,9 +501,65 @@ button:hover{
     #quememarilia .conteudo{
         padding:0px!important;
     }
-    
+    .amarela-quem-sou-mobile{
+        margin-top: 25px;
+        display: flex!important;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+    .azul-social-mobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #81CCDB;
+        width: 85vw;
+        height: 80px;
+        padding-left: 23vw;
+        border-radius: 45px 0px 0px 45px;
+    }
+    .amarelo-mobile-agora{
+        width: 100vw;
+        position: absolute;
+        background-color: #FFEC6E;
+        z-index: -1;
+        height: 380px;
+        margin-bottom: -75px;
+    }
+}
+@media (max-width:1096px){
+    input {
+        height: 60px;
+    }
+    #button-enviar{
+        margin-top: 34px;
+        font-size: 30px;
+    }
+    .container-input {
+        margin-top: 15px;
+    }
+    .azul-social {
+        margin-top: 53.2vh;
+    }
+    .amarela-quem-sou {
+        height: 660px;
+    }
 }
 @media (max-width: 768px){
+    .corresponde-amarelo{
+        padding:30px;
+    }
+    .amarela-quem-sou-mobile {
+        margin-bottom: -14px;
+    }
+    .amarelo-mobile-agora {
+        height: 309px;
+        margin-bottom: -75px;
+    }
+    .azul-social-mobile{
+        padding-left: 19vw;
+    }
     .item-laranja{
         width: 100vw;
     }
@@ -505,7 +576,7 @@ button:hover{
     }
     #banner-topo{
         background-position: top;
-        height: 200px;
+        height: 182px;
     }
     .titulo1{
         font-size: 2rem;
@@ -531,7 +602,7 @@ button:hover{
     }
     #button-enviar, .button-default{
         margin-top: 40px;
-        width: 500px;
+        width: 90vw;
         height: 75px;
         font-size: 25px;
     }
@@ -562,6 +633,26 @@ button:hover{
     }
 }
 @media (max-width: 425px){
+    .container-social img {
+        height: auto;
+        width: 48px;
+    }
+    .amarelo-mobile-agora {
+        height: 300px;
+        margin-bottom: -50px;
+    }
+    .azul-social-mobile {
+        padding-left: 15vw;
+    }
+    .container-social {
+        margin: 0px 10px;
+    }
+    .azul-social-mobile {
+        width: 90vw;
+    }
+    .container-texto-quem-sou {
+        max-width: 96vw;
+    }
     .container-input {
         margin-top: 10px;
     }
@@ -583,8 +674,8 @@ button:hover{
         width: 100vw;
     }
     .titulo1{
-        font-size: 1.8rem;
-        line-height: 28px;
+        font-size: 1.7rem;
+        line-height: 26px;
     }
     .mobile-column{
         flex-direction: column;
@@ -629,8 +720,12 @@ button:hover{
         width: 90vw;
     }
     #banner-topo{
-        background-size: cover;
+        background-size: contain;
         background-image: url('../imagens/banner_mobile.jpg');
+    }
+    #banner-topo {
+        background-position: top;
+        height: 169px;
     }
     #img-banner{
         display: block;
