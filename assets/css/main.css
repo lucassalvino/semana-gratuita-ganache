@@ -318,6 +318,9 @@ button:hover{
 .corresponde-amarelo{
     margin-left: 25vw;
 }
+#img-banner{
+    display: none;
+}
 @media (max-width:2100px ) {
     .corresponde-amarelo{
         margin-left: 20vw;
@@ -559,7 +562,15 @@ button:hover{
     }
 }
 @media (max-width: 425px){
+    .container-input {
+        margin-top: 10px;
+    }
     #container-texto-branco .texto-branco{
+        line-height: 20px;
+        font-size: 1rem;
+    }
+    .titulo2 {
+        font-size: 1.1rem;
         line-height: 20px;
     }
     .conteudo {
@@ -611,12 +622,19 @@ button:hover{
         height: 52px;
         font-size: 18px;
     }
+    #button-enviar{
+        margin-top: 22px;
+    }
     .iframe-video iframe {
         width: 90vw;
     }
     #banner-topo{
         background-size: cover;
-        background-image: url('../imagens/banner-topo-mobile.png');
+        background-image: url('../imagens/banner_mobile.jpg');
+    }
+    #img-banner{
+        display: block;
+        visibility: hidden;
     }
     .titulo1-2linhas{
         font-size: 1.2rem;

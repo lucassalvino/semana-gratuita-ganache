@@ -342,7 +342,7 @@ button:hover{
         width: 90vw;
     }
     #banner-topo{
-        background-size: contain;
+        background-size: cover;
         background-image: url('../imagens/banner-topo-mobile.png');
     }
     .fundo-amarelo {
