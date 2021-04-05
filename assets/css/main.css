@@ -1,12 +1,12 @@
 html, body {
     overflow-x:hidden;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    align-self: flex-start;
+}
 *{
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
     font-family: 'Open Sans';
 }
 .lds-dual-ring {
@@ -269,6 +269,7 @@ button:hover{
 }
 .img-destaque1{
     width: 100%;
+    max-width: 1500px;
 }
 .img-destaque2{
     height: auto;
@@ -355,9 +356,7 @@ button:hover{
 .corresponde-amarelo{
     margin-left: 25vw;
 }
-#img-banner{
-    display: none;
-}
+
 @media (max-width:2100px ) {
     .corresponde-amarelo{
         margin-left: 20vw;
@@ -680,6 +679,16 @@ button:hover{
     }
 }
 @media (max-width: 425px){
+    .item-laranja {
+        width: 100vw;
+        margin-top: 11px;
+    }
+    .conteudo-sobre-laranja {
+        margin-top: 60px;
+    }
+    .margin-cronograma {
+        margin-top: 40px;
+    }
     .container-social img {
         height: auto;
         width: 48px;
@@ -769,16 +778,18 @@ button:hover{
         width: 90vw;
     }
     #banner-topo{
-        background-size: contain;
-        background-image: url('../imagens/banner_mobile.jpg');
+        display: none!important;
+    }
+    #banner-mobile{
+        display: block!important;
     }
     #banner-topo {
         background-position: top;
         height: 169px;
     }
     #img-banner{
-        display: block;
-        visibility: hidden;
+        height: auto;
+        width: 100vw;
     }
     .titulo1-2linhas{
         font-size: 1.2rem;
@@ -798,12 +809,30 @@ button:hover{
     .enfeite-quem-sou {
         display: none!important;
     }
+    #quememarilia .container-conteudo{
+        margin-top: 5px!important;
+    }
 }
 @media (max-width: 375px){
+    .titulo1-2linhas {
+        font-size: 1.1rem;
+    }
+    #button-enviar, .button-default {
+        height: 65px;
+        font-size: 18px;
+    }
     .azul-social {
         margin-top: 148px;
     }
     #rodape {
         margin-top: 75px;
+    }
+}
+@media (max-width: 320px){
+    #button-quero-inscrever-rodape, #button-quero-inscrever{
+        font-size: 12px;
+    }
+    #button-enviar, .button-default {
+        font-size: 16px;
     }
 }
