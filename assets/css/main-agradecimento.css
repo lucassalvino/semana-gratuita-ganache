@@ -250,6 +250,13 @@ button:hover{
     }
 }
 @media (max-width: 768px){
+    .iframe-video iframe{
+        min-height: 400px;
+        width: 85vw;
+    }
+    .fundo-amarelo {
+        height: 250px;
+    }
     .container-social {
         margin: 0px 8px;
     }
@@ -297,6 +304,13 @@ button:hover{
     }
 }
 @media (max-width:698px){
+    .iframe-video iframe{
+        min-height: 400px;
+        width: 92vw;
+    }
+    .fundo-amarelo {
+        height: 250px;
+    }
     #container-social{
         display: none!important;
     }
@@ -331,6 +345,17 @@ button:hover{
 }
 
 @media (max-width: 425px){
+    .iframe-video iframe{
+        min-height: 245px;
+        width: 95vw;
+    }
+    .fundo-amarelo {
+        height: 200px;
+        margin-top: 142px;
+    }
+    #falta-pouco {
+        margin-top: 80px;
+    }
     .container-fotografia-marilia img{
         height: 80vw;
         width: 80vw;
@@ -344,9 +369,6 @@ button:hover{
     #banner-topo{
         background-size: cover;
         background-image: url('../imagens/banner-topo-mobile.png');
-    }
-    .fundo-amarelo {
-        margin-top: 200px;
     }
     #button-enviar, .button-default {
         display: flex;
